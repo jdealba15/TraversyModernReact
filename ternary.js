@@ -4,7 +4,7 @@ const message = number % 2 === 0 ? 'Even Number' : 'Odd Number';
 
 console.log(message);
 
-//Second excample
+//Second example
 
 const note = {
     title: 'Meeting notes',
@@ -20,4 +20,17 @@ const noteText = `
     `;
 
 console.log(noteText);
+
+//Third example
+
+const isLoggedIn = true;
+
+function showWelcome() {
+    return isLoggedIn && 'Welcome, User';
+}
+
+console.log(showWelcome());
+
+
+
     
