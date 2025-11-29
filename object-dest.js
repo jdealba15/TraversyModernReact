@@ -8,6 +8,10 @@ const { title } = note;
 
 console.log(title);
 
+const { title: noteTItle, isPinned } = note;
+
+console.log(noteTItle);
+
 
 // next task, perhaps find way to integrate a template literal?
 
