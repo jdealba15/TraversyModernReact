@@ -1,9 +1,21 @@
 const user = {
     name: 'Ben',
-    address: { city: 'Boston', state: 'MA' }
+    address: { city: 'Boston', state: 'MA' },
+    hobbies: ['Movies', 'Sports', 'Music']
 };
 
-const { name } = user;
-const { address: { city } } = user;
-console.log(name);
-console.log(city);
+const { 
+    name,
+    hobbies: [firstHobby], 
+} = user;
+console.log(firstHobby);
+
+const {
+    hobbies: [, , otherHobby],
+} = user;
+console.log(otherHobby);
+
+
+
+
+
