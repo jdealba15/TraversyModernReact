@@ -19,10 +19,19 @@ const notes = [
 
 const noteTitles = notes.map((note) => note.content);
 const noteTitlesA = notes.map((note, index) => `${index + 1}. ${note.title}`);
+
 const pinnedNotes = notes.filter((note) => {
     return note.isPinned;
 });
 
+//implicit return, chained methods
+
+const pinnedNotesChn = notes
+    .filter((note) => note.isPinned)
+    .map((note) => note.title);
+
+
+console.log(pinnedNotesChn);
 console.log(noteTitles);
 console.log(noteTitlesA);
 console.log(pinnedNotes);
