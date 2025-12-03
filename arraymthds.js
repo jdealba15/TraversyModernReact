@@ -29,9 +29,8 @@ const pinnedNotes = notes.filter((note) => {
 const pinnedNotesChn = notes
     .filter((note) => note.isPinned)
     .map((note) => note.title);
-
-
 console.log(pinnedNotesChn);
+
 console.log(noteTitles);
 console.log(noteTitlesA);
 console.log(pinnedNotes);
