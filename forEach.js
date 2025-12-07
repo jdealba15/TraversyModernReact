@@ -1,9 +1,21 @@
-const notes = [
-    { title: 'Meeting Notes', content: 'Discuss project roadmap', isPinned: true },
-    { title: 'Grocery List', content: 'Buy milk, eggs, bread', isPinned: false },
-    { title: 'Workout Plan', content: 'Push day: Bench, Shoulder Press', isPinned: false },
-    { title: 'Recipe Ideas', content: 'Pasta, Salad, Tacos', isPinned: false },
-];
+let value = null;
+let result = value ?? 'Default Value';
 
-notes.forEach((note) => console.log(note.title));
-notes.forEach((note) => console.log(note.content));
+console.log(result);
+
+let valueE = '';
+let resultE = value || 'Default Value';
+
+console.log(resultE);
+
+//Null is intentional, undefined is unassigned
+let other;
+console.log(other);
+
+//Optional chaining combined with 'Nullish Coalescing Operator...'.
+
+const user = {
+    name: 'Brad',
+};
+
+console.log(user.address?.city ?? 'Unknown');
