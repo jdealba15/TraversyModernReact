@@ -15,3 +15,4 @@ fetch('https://jsonplaceholder.typicode.com/posts/1')
     fetchData();
 
 //Study differences between .then and async/await.
+
