@@ -6,13 +6,27 @@
     <title>Document</title>
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
     <div id="root"></div>
 
-    <script>
+    <script type="text/babel">
+        function Header() {
+            return (
+                <header>
+                    <h2>App Header</h2>
+                </header>
+            );
+        }
+
         function App() {
-            return React.createElement('h1', null, 'Hello, React');
+            return (
+                <div>
+                    <Header />
+                    <h1>Hello, React</h1>
+                </div>
+            );
         }
 
         const container = document.getElementById('root');
