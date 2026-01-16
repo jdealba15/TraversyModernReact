@@ -22,24 +22,15 @@
 
         function App() {
             const name = 'John';
-            const member = false;
-
-            if(member) {
+            const member = true;
                 return (
                     <>
+                      <Header />
                       <h1>Hello, {name}</h1>
-                      <p>Welcome Back</p>
+                      {member ? <p>Welcome Back</p> : <p>Join Us!</p>}
                     </>
                 );
-            } else {
-                return (
-                    <>
-                        <h1>Hello, {name}</h1>
-                        <p>Join Us!</p>
-                    </>
-                )
             }
-        }
 
         const container = document.getElementById('root');
         const root = ReactDOM.createRoot(container);
